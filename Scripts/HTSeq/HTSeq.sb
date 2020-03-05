@@ -26,7 +26,7 @@ Read_Base=`basename $Read_Folder_Path`
 cd /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Input/HTSeq/Output/
 
 # Code
-htseq-count --format=sam --order=name --stranded=yes --type=exon --idattr=Parent --mode=union ${Read_Folder_Path}/SortedSam.sam /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Input/Raw_Input/V_corymbosum_v1.0_geneModels.gff > ${Read_Base}_Results.count
+htseq-count --format=sam --order=name --stranded=yes --type=exon --idattr=Parent --mode=union ${Read_Folder_Path}/SortedSam.sam /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Scripts/Assembly_Subset/Filtered_Blueberry_Annot.gff > ${Read_Base}_Results.count
 
 
 end=`date +%s`

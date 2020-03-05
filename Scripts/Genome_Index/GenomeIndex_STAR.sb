@@ -20,8 +20,8 @@ module load STAR/2.6.1c
 STAR --runThreadN 2 \
 --runMode genomeGenerate \
 --genomeDir /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Input/Genome_Index \
---genomeFastaFiles /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Input/Raw_Input/V_corymbosum_genome_v1.0.fasta \
---sjdbGTFfile /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Input/Raw_Input/V_corymbosum_v1.0_geneModels.gff \
+--genomeFastaFiles /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Scripts/Assembly_Subset/BlueHaplotypeBlueberry.fa \
+--sjdbGTFfile /mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Scripts/Assembly_Subset/Filtered_Blueberry_Annot.gff \
 --sjdbGTFtagExonParentTranscript Parent \
 --sjdbOverhang 149
 

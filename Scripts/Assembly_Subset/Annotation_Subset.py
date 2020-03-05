@@ -12,5 +12,7 @@ annot = pd.read_csv('/mnt/research/edgerpat_lab/Scotty/Blueberry_RNA_Seq/Input/R
 
 chromosomes_i_want = ['VaccDscaff1','VaccDscaff2','VaccDscaff4','VaccDscaff6','VaccDscaff7','VaccDscaff11','VaccDscaff12','VaccDscaff13','VaccDscaff17','VaccDscaff20','VaccDscaff21','VaccDscaff22']
 annot = annot[annot.Chromosome.isin(chromosomes_i_want)]
+annot.Start = annot.Start.astype('int32')
+annot.Stop = annot.Stop.astype('int32')
 annot.to_csv('Filtered_Blueberry_Annot.gff', sep='\t', header=False, index=False)
 
